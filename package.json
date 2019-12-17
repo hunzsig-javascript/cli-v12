@@ -3,9 +3,6 @@
   "bin": {
     "cliv12": "./bin/cliv12.js"
   },
-  "browserslist": [
-    "defaults"
-  ],
   "bundleDependencies": [],
   "dependencies": {
     "address": "1.1.2",
@@ -99,5 +96,5 @@
     "test:watch": "npm test -- --watch ",
     "webpack": "npm run clear && node ./test/compiler.js"
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
