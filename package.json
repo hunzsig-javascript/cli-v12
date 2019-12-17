@@ -1,0 +1,100 @@
+{
+  "name": "hunzsig-javascript-cli-v12",
+  "version": "0.0.1",
+  "description": "nodejs-cli by hunzsig",
+  "main": "index.js",
+  "bin": {
+    "cliv12": "./bin/cliv12.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "clear": "rm -rf test/fixtures/*/dist/ && rm -rf test/fixtures/*/.happypack/",
+    "cover": "http-server ./ -o -c-1",
+    "start": "http-server ./test/fixtures/ -o -c-1 -p 8081",
+    "test": "npm run clear && istanbul cover _mocha ./test/*-test.js -- ",
+    "test:update": "npm test -- --updateExpect",
+    "test:watch": "npm test -- --watch ",
+    "webpack": "npm run clear && node ./test/compiler.js"
+  },
+  "keywords": [
+    "hunzsig","cli-v12"
+  ],
+  "author": "hunzsig",
+  "license": "MIT",
+  "bundleDependencies": [],
+  "dependencies": {
+    "address": "latest",
+    "autoprefixer": "latest",
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-plugin-import": "latest",
+    "babel-plugin-syntax-dynamic-import": "latest",
+    "babel-plugin-transform-decorators-legacy": "latest",
+    "babel-plugin-transform-es2015-modules-commonjs": "latest",
+    "babel-plugin-transform-es2015-object-super": "latest",
+    "babel-plugin-transform-export-extensions": "latest",
+    "babel-plugin-transform-runtime": "latest",
+    "babel-preset-env": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-0": "latest",
+    "babel-runtime": "latest",
+    "case-sensitive-paths-webpack-plugin": "2.2.0",
+    "chalk": "latest",
+    "commander": "latest",
+    "css-hot-loader": "latest",
+    "css-loader": "latest",
+    "deep-assign": "latest",
+    "deepmerge": "latest",
+    "detect-port": "latest",
+    "file-loader": "latest",
+    "gulp": "latest",
+    "html-webpack-plugin": "latest",
+    "http-proxy-middleware": "latest",
+    "inquirer": "latest",
+    "less": "latest",
+    "less-loader": "latest",
+    "lodash": "latest",
+    "mini-css-extract-plugin": "latest",
+    "mkdirp": "latest",
+    "node-easy-cert": "latest",
+    "node-ipc": "latest",
+    "node-sass": "latest",
+    "optimize-css-assets-webpack-plugin": "latest",
+    "postcss-loader": "latest",
+    "react-dev-utils": "latest",
+    "react-hot-loader": "latest",
+    "rimraf": "latest",
+    "sass-loader": "latest",
+    "uglifyjs-webpack-plugin": "latest",
+    "url-loader": "latest",
+    "webpack": "latest",
+    "webpack-bundle-analyzer": "latest",
+    "webpack-dev-server": "latest",
+    "webpack-merge": "latest",
+    "webpack-plugin-import": "latest",
+    "webpack-simple-progress-plugin": "latest",
+    "webpack-sources": "latest",
+    "html-loader": "latest",
+    "markdown-loader": "latest"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "coveralls": "latest",
+    "del": "latest",
+    "expect": "latest",
+    "glob": "latest",
+    "http-server": "latest",
+    "istanbul": "latest",
+    "minimist": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
