@@ -13,7 +13,6 @@ A cli for js with webpack
     cliv12 app
 
 ### buildConfig in package.json
-##### hot : auto refresh browser [default true]
 ##### dropConsole : drop console [default true]
 ##### primaryTheme : webpackage->options->modifyVars
 ##### import : demand loading [default null]
@@ -22,7 +21,6 @@ A cli for js with webpack
 ##### entry : entry like webpackage [default {"dev": "src/index.js", "prod": "src/dev.js","app": "src/app.js"}]
 ```
 "buildConfig": {
-  "hot": false,
   "dropConsole": true,
   "primaryTheme": {
      "primary-color": "#6699ff",
